@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+    --font-main: "Ubuntu", sans-serif;
+}
+body {
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    font-family: var(--font-main);
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
