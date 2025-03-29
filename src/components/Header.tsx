@@ -29,8 +29,7 @@ const Header = () => {
                         <Link
                             key={item.path}
                             to={item.path}
-                            className={`relative w-fit text-white after:block after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full ${
-                                location.pathname === "/about" ? "font-semibold" : ""
+                            className={`relative w-fit text-white after:block after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full 
                             }`}
                         >
                             {item.name}
