@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 import useLockBodyScroll from "../hooks/useLockBodyScrool";
-import graviti from "../../public/graviti1.png";
+import graviti from "../../public/logo-1-alpha.png";
 
 
 const Header = () => {
@@ -14,14 +14,13 @@ const Header = () => {
         { name: "Home", path: "/" },
         { name: "About Us", path: "/about" },
         { name: "Services", path: "/services" },
-        { name: "Our Products", path: "/our-products" },
         { name: "Contact", path: "/contact" },
     ];
 
     return (
         <header className="text-white w-full z-50 relative border-b border-white/20">
-            <div className="flex items-center justify-between px-0 py-4 max-w-7xl mx-auto">
-                <img src={graviti} className="h-16" />
+            <div className="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+                <img src={graviti} className="h-18" />
 
                 {/* Desktop Menü */}
                 <nav className="hidden md:flex gap-6">

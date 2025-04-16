@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import graviti from "../../public/graviti1.png";
+import graviti from "../../public/logo-1-alpha.png";
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
                 {/* Logo / About */}
                 <div>
-                    <img src={graviti} className="h-16 m-auto mb-8" />
+                    <img src={graviti} className="h-24 m-auto mb-8" />
                     <p className="text-sm leading-relaxed">
                         We build elegant and scalable digital products tailored for businesses across various industries — where trust meets
                         technology.

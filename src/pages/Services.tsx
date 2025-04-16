@@ -1,25 +1,30 @@
-import { FaTools, FaMobileAlt, FaCloud, FaGem } from "react-icons/fa";
+import { FaLaptopCode, FaMobileAlt, FaCloud, FaCogs, FaProjectDiagram } from "react-icons/fa";
 
 const services = [
     {
-        icon: <FaTools className="text-blue-600 text-4xl mb-4" />,
-        title: "Custom Software Development",
-        desc: "We craft scalable and tailored software solutions to meet the unique needs of your business.",
+        icon: <FaLaptopCode className="text-blue-600 text-4xl mb-4" />,
+        title: "Web Applications",
+        desc: "We design and develop user-centric, fast, and scalable web applications, with a strong focus on performance and security.",
     },
     {
         icon: <FaMobileAlt className="text-blue-600 text-4xl mb-4" />,
-        title: "Mobile App Design",
-        desc: "Elegant and user-friendly mobile apps that reflect your brand and deliver seamless user experiences.",
+        title: "Mobile Applications",
+        desc: "Using modern mobile technologies, we build secure and high-performance mobile apps for iOS and Android, prioritizing user experience.",
     },
     {
         icon: <FaCloud className="text-blue-600 text-4xl mb-4" />,
-        title: "Cloud Integration",
-        desc: "Integrate modern cloud infrastructure into your workflow for faster, safer, and more reliable systems.",
+        title: "Cloud Solutions",
+        desc: "We provide end-to-end support in the design, deployment, and management of cloud infrastructures to securely transform your digital operations.",
     },
     {
-        icon: <FaGem className="text-blue-600 text-4xl mb-4" />,
-        title: "Digital Solutions for Jewelry",
-        desc: "Specialized software for jewelry businesses to manage inventory, customers, and sales with precision.",
+        icon: <FaCogs className="text-blue-600 text-4xl mb-4" />,
+        title: "Software Development & Integration",
+        desc: "We deliver flexible, scalable software solutions using Agile and DevOps, ensuring seamless integration with your systems.",
+    },
+    {
+        icon: <FaProjectDiagram className="text-blue-600 text-4xl mb-4" />,
+        title: "CRM & ERP Systems",
+        desc: "We help you digitalize your operations with tailored CRM and ERP solutions — from analysis to full implementation and training.",
     },
 ];
 
@@ -29,7 +34,7 @@ export default function Services() {
             <div className="max-w-7xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12">Our Services</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     {services.map((service, idx) => (
                         <div key={idx} className="bg-[#1a1a1a] p-8 rounded-xl shadow-md hover:shadow-blue-800/30 transition text-left">
                             {service.icon}
